@@ -1,0 +1,19 @@
+### Create New User
+POST http://localhost:5100/api/reviews
+Content-Type: application/json
+
+{
+    "userId":"660956b8460a485fbb0127a2",
+    "restaurantId":"660bcc81e794a7069b456b77",
+    "rating":7,
+    "reviewText":"Lorem ipsum textt"
+}
+
+### PeriodTimes
+POST http://localhost:5100/api/periodTimes
+Content-Type: application/json
+
+{
+  "restaurantId": "660d273939537ef6a66c7f29",
+  "periodId": "660fbc6ea66e2a5f2d7502db"
+}

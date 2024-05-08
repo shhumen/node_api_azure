@@ -1,0 +1,29 @@
+### Create New User
+POST http://localhost:5100/api/users
+Content-Type: application/json
+
+{
+    "password": "Wumen0211!" ,
+    "confirmPassword": "Wumen0211!" ,
+    "firstname":"Shumen",
+    "lastname":"Mehdiyeva",
+    "email":"shumen.mehdiyeva@icloud.com"
+}
+
+### otp
+POST http://localhost:5100/api/users/verify-otp
+Content-Type: application/json
+
+{
+    "email": "aytan.sh.aa@gmail.com", 
+    "otp": "950494" 
+}
+
+### Login
+POST http://localhost:5100/api/auth/login
+Content-Type: application/json
+ 
+{ 
+    "username": "shumen.mehdi", 
+    "password": "Wumen0211!" 
+}

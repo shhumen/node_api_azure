@@ -1,0 +1,21 @@
+### restaurant
+
+POST http://localhost:5100/api/restaurants
+Content-Type: application/json
+
+{
+    "restaurantName": "Etiquette Chill&Co",
+    "description": "Cute Pub with sky theme",
+    "address": {
+        "street": "170 Bəşir Səfəroğlu, Bakı 1009",
+        "city": "Baku",
+        "state": "Absheron",
+        "zip": "AZ1000",
+    }
+}
+
+### get all 
+GET http://localhost:5100/api/restaurants
+
+### Get By Id
+GET http://localhost:5100/api/restaurants/65ffcd4387c5fe00fefc1215
