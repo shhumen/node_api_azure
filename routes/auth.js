@@ -65,18 +65,6 @@ router.post('/login', validateUser, async (req, res) => {
   }
 })
 
-// router.get('/me', authenticationToken, async (req, res) => {
-//   try {
-//     const user = await User.findById(req.user.userId) // Access user ID from JWT
-//     if (!user) {
-//       return res.status(404).send({ message: 'User not found' })
-//     }
-//     res.json(user) // Return user data
-//   } catch (error) {
-//     res.status(500).send({ message: 'Server error' })
-//   }
-// })
-
 router.get('/me', authenticationToken, async (req, res) => {
   try {
     const user = await User.findById(req.user.userId)

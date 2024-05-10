@@ -36,12 +36,7 @@ const UserSchema = new Schema(
     firstname: String,
     lastname: String,
     phone: String,
-    // address: {
-    //   street: String,
-    //   city: String,
-    //   state: String,
-    //   zip: String,
-    // },
+
     favoriteRestaurants: [
       {
         type: mongoose.Types.ObjectId,

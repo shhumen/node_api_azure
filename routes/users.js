@@ -16,10 +16,7 @@ const validator = require('validator')
 require('dotenv').config()
 
 const isPhoneNumberValid = (phoneNumber) => {
-  // Implement your custom phone number validation logic here
-  // For example, you can use regex to validate phone number format
-  // This is just a simple example, you may need to adjust it based on your requirements
-  const phoneNumberRegex = /^\d{10}$/ // Assuming phone number should be exactly 10 digits
+  const phoneNumberRegex = /^\d{10}$/
   return phoneNumberRegex.test(phoneNumber)
 }
 
@@ -203,7 +200,6 @@ router.patch('/:id', getUser, async (req, res) => {
       return res.status(400).json({ error: 'Invalid updates!' })
     }
 
-    // Custom phone number validation
     if (req.body.phone && !isPhoneNumberValid(req.body.phone)) {
       return res.status(400).json({
         success: false,
